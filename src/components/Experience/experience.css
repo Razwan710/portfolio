@@ -1,0 +1,115 @@
+.experience-section {
+    padding: 2rem;
+    background-color: #0fe4d9; /* Light background color for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .experience-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem; /* Increased font size for a more prominent header */
+    color: #222; /* Darker text color for better readability */
+    font-weight: 700;
+    text-transform: uppercase; /* Uppercase header for a modern touch */
+  }
+  
+  .experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem; /* Increased gap for better spacing */
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .experience-card {
+    background: linear-gradient(145deg, #ffffff, #ffffffb2);
+    border-radius: 12px; /* Slightly rounded corners for a modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Richer shadow for depth */
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .experience-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .experience-duration {
+    font-size: 1.1rem;
+    color: #ff0b0b; /* Blue color for the duration */
+    margin: 0.5rem 0;
+    font-weight: 600;
+    text-align: right;
+  }
+  .experience-company-title,
+.experience-location-title {
+  font-size: 1rem;
+  color: #200000;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: 700;
+text-align: justify;
+}
+  .experience-company{
+    font-size: 2rem;
+    color: #0017e9; 
+    margin: 0.5rem 0;
+    font-weight: 600;
+    text-align: center;
+  }
+  .experience-location {
+    font-size: 1rem;
+    color: #0017e9; 
+    margin: 0.5rem 0;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .experience-responsibilities {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 1rem 0 0 0;
+  }
+  
+  .responsibility-item {
+    font-size: 0.9rem;
+    color: #000000;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .experience-card {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .experience-header {
+      font-size: 2rem;
+    }
+    
+    .experience-card {
+      padding: 1rem;
+    }
+    
+    .experience-title {
+      font-size: 1.25rem;
+    }
+    
+    .experience-duration,
+    .experience-company,
+    .experience-location,
+    .responsibility-item {
+      font-size: 0.875rem;
+    }
+  }
+  
